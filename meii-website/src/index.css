@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Manrope', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f5f8f3;
+    color: #152112;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-primary-600 px-6 py-3 font-semibold text-white shadow-md transition-all duration-300 hover:scale-[1.02] hover:bg-primary-700 hover:shadow-lg active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 rounded-full border-2 border-primary-600 bg-white px-6 py-3 font-semibold text-primary-700 transition-all duration-300 hover:scale-[1.02] hover:bg-primary-50 active:scale-95;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center gap-2 rounded-full bg-accent-500 px-6 py-3 font-semibold text-white shadow-md transition-all duration-300 hover:scale-[1.02] hover:bg-accent-600 hover:shadow-lg active:scale-95;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent;
+  }
+
+  .stat-card {
+    @apply bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 text-center;
+  }
+
+  .pillar-card {
+    @apply card p-8 hover:-translate-y-2 transition-all duration-300 cursor-default;
+  }
+
+  .nav-link {
+    @apply text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary-600 hover:after:w-full after:transition-all after:duration-300;
+  }
+
+  .section-tag {
+    @apply inline-flex items-center gap-2 text-primary-600 font-semibold text-sm uppercase tracking-wider mb-3;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-slate-900 leading-tight;
+  }
+
+  .section-subtitle {
+    @apply max-w-3xl text-lg leading-relaxed text-slate-600;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #0f1d0d 0%, #183418 35%, #235e22 70%, #2a7529 100%);
+  }
+
+  .green-gradient {
+    background: linear-gradient(135deg, #183418 0%, #235e22 55%, #2a7529 100%);
+  }
+
+  .orange-gradient {
+    background: linear-gradient(135deg, #f06508 0%, #ff9f3b 100%);
+  }
+
+  .warm-gradient {
+    background: linear-gradient(135deg, #fdf8f0 0%, #faefd8 100%);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e7ede3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a9339;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a7529;
+}
+
+/* Animations for scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image overlay */
+.img-overlay {
+  position: relative;
+}
+
+.img-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.6) 100%);
+  border-radius: inherit;
+}
