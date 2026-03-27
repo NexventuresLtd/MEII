@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import {
-  ArrowRight, Users, BookOpen, Home as HomeIcon, Target, CheckCircle,
+  ArrowRight, Users, BookOpen, Home as HomeIcon, Target,
   TrendingUp, Heart, Star, Quote, ChevronDown, Sparkles, Globe
 } from 'lucide-react';
 import AnimatedCounter from '../components/AnimatedCounter';
