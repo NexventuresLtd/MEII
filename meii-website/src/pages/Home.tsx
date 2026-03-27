@@ -5,6 +5,10 @@ import {
 } from 'lucide-react';
 import AnimatedCounter from '../components/AnimatedCounter';
 import PageHero from '../components/PageHero';
+import ChallengeSection from '../components/sections/ChallengeSection';
+import PillarsSection from '../components/sections/PillarsSection';
+import VisionMissionSection from '../components/sections/VisionMissionSection';
+import ImpactNumbersSection from '../components/sections/ImpactNumbersSection';
 
 const stats = [
   { label: 'School-aged Children', value: 30000, suffix: '+', icon: Users, color: 'from-green-400 to-green-600' },
@@ -193,246 +197,16 @@ export default function Home() {
       </section>}
 
       {/* THE CHALLENGE SECTION */}
-      <section className="section-padding bg-gray-50">
-        <div className="section-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Image */}
-            <div className="relative">
-              <div className="rounded-3xl overflow-hidden shadow-2xl">
-                <img
-                  src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=700&q=80"
-                  alt="Children in classroom"
-                  className="w-full h-80 md:h-[450px] object-cover"
-                />
-              </div>
-              {/* Floating card */}
-              <div className="absolute -bottom-6 -right-4 md:-right-8 bg-white rounded-2xl shadow-xl p-4 max-w-[200px]">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
-                    <Target className="w-4 h-4 text-red-600" />
-                  </div>
-                  <span className="font-semibold text-gray-900 text-sm">SDG 4</span>
-                </div>
-                <p className="text-xs text-gray-600">Aligned with Quality Education goals for all</p>
-              </div>
-              {/* Accent blob */}
-              <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary-100 rounded-full -z-10" />
-            </div>
-
-            {/* Content */}
-            <div>
-              <span className="section-tag">
-                <Target className="w-4 h-4" /> The Challenge
-              </span>
-              <h2 className="section-title mb-6">
-                The Urgent Need for{' '}
-                <span className="gradient-text">Quality Education</span>
-              </h2>
-              <p className="section-subtitle mb-8">
-                In Mahama Refugee Camp, the largest in Rwanda, the promise of education is threatened.
-                This isn't just about resources — it's about the future of a generation.
-              </p>
-
-              <div className="space-y-4">
-                {[
-                  { icon: Users, text: 'Overcrowded classrooms with students far beyond capacity', color: 'text-red-500 bg-red-50' },
-                  { icon: BookOpen, text: 'Severe shortage of textbooks — students share limited materials', color: 'text-orange-500 bg-orange-50' },
-                  { icon: Target, text: 'Teachers lack formal training in modern, competency-based methods', color: 'text-yellow-600 bg-yellow-50' },
-                  { icon: HomeIcon, text: 'Poor infrastructure with inadequate lighting and unsafe structures', color: 'text-blue-500 bg-blue-50' },
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
-                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${item.color}`}>
-                      <item.icon className="w-5 h-5" />
-                    </div>
-                    <p className="text-gray-700 leading-relaxed text-sm md:text-base">{item.text}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-8">
-                <Link to="/need" className="btn-primary">
-                  Read the Full Context <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ChallengeSection />
 
       {/* THREE PILLARS */}
-      <section className="section-padding bg-white">
-        <div className="section-container">
-          <div className="text-center mb-12">
-            <span className="section-tag justify-center">
-              <Sparkles className="w-4 h-4" /> Our Solution
-            </span>
-            <h2 className="section-title mb-4">
-              Three Pillars,{' '}
-              <span className="gradient-text">One Integrated Solution</span>
-            </h2>
-            <p className="section-subtitle mx-auto">
-              Unlike fragmented programs, MEII provides a comprehensive and coordinated system
-              that tackles the root causes of educational disparity simultaneously.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {pillars.map((pillar, i) => (
-              <div key={i} className={`pillar-card border-2 ${pillar.color}`}>
-                {/* Image */}
-                <div className="h-44 rounded-xl overflow-hidden mb-6 -mx-2">
-                  <img
-                    src={pillar.image}
-                    alt={pillar.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-
-                {/* Icon + number */}
-                <div className="flex items-center gap-4 mb-4">
-                  <div className={`w-12 h-12 ${pillar.iconBg} rounded-xl flex items-center justify-center shadow-md`}>
-                    <pillar.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <span className="text-5xl font-black text-gray-100 font-heading">{String(i + 1).padStart(2, '0')}</span>
-                </div>
-
-                <h3 className="text-xl font-bold text-gray-900 font-heading mb-3">{pillar.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-5">{pillar.description}</p>
-
-                <ul className="space-y-2">
-                  {pillar.features.map((feature, fi) => (
-                    <li key={fi} className="flex items-center gap-2 text-sm text-gray-700">
-                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Link to="/approach" className="btn-primary">
-              Explore Our Full Approach <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      <PillarsSection pillars={pillars} />
 
       {/* VISION & MISSION */}
-      <section className="section-padding green-gradient relative overflow-hidden">
-        <div className="absolute inset-0 hero-pattern opacity-20" />
-        <div className="section-container relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <span className="section-tag text-green-200">
-                <Heart className="w-4 h-4" /> Our Promise
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-white font-heading mb-8">
-                Our Promise to Mahama's Children
-              </h2>
-              <div className="space-y-6">
-                <div className="glass-card rounded-2xl p-6">
-                  <h3 className="text-yellow-300 font-semibold text-lg mb-2 font-heading">Our Vision</h3>
-                  <p className="text-green-100 leading-relaxed text-sm">
-                    To become a leading community-based initiative, recognized for transforming educational
-                    quality in Mahama, empowering every refugee learner to achieve their full potential.
-                  </p>
-                </div>
-                <div className="glass-card rounded-2xl p-6">
-                  <h3 className="text-yellow-300 font-semibold text-lg mb-2 font-heading">Our Mission</h3>
-                  <p className="text-green-100 leading-relaxed text-sm">
-                    To improve education by strengthening teacher capacity, enhancing learning resources,
-                    and creating safe, conducive learning spaces for all refugee learners in Mahama.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
-                <h3 className="text-white font-bold text-xl font-heading mb-6 text-center">
-                  SDG Alignment
-                </h3>
-                <div className="grid grid-cols-2 gap-4 mb-8">
-                  {sdgGoals.map((goal) => (
-                    <div key={goal.number} className="flex items-center gap-3 bg-white/10 rounded-xl p-3">
-                      <div className={`w-10 h-10 ${goal.color} rounded-lg flex items-center justify-center font-bold text-white text-sm flex-shrink-0`}>
-                        {goal.number}
-                      </div>
-                      <span className="text-green-100 text-xs font-medium">{goal.title}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="text-center">
-                  <p className="text-green-200 text-sm mb-4">MEII is aligned with global education priorities</p>
-                  <Link to="/approach" className="btn-primary bg-white text-primary-700 hover:bg-green-50 text-sm px-6 py-2.5">
-                    See Our Strategic Plan
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <VisionMissionSection sdgGoals={sdgGoals} />
 
       {/* IMPACT NUMBERS */}
-      <section className="section-padding bg-gray-900">
-        <div className="section-container">
-          <div className="text-center mb-12">
-            <span className="section-tag text-primary-400 justify-center">
-              <TrendingUp className="w-4 h-4" /> Year 1 Targets
-            </span>
-            <h2 className="section-title text-white mb-4">
-              Creating Tangible Change
-            </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              MEII is not just a plan; it's a movement. In our first year, we're committed to measurable impact.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {impacts.map((impact, i) => (
-              <div key={i} className="bg-gray-800 rounded-2xl p-6 text-center border border-gray-700 hover:border-primary-600 transition-colors group">
-                <div className={`w-14 h-14 ${impact.bg} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
-                  <impact.icon className={`w-7 h-7 ${impact.color}`} />
-                </div>
-                <div className={`text-3xl md:text-4xl font-black font-heading mb-1 ${impact.color}`}>
-                  <AnimatedCounter end={impact.value} suffix={impact.suffix} />
-                </div>
-                <p className="text-gray-400 text-sm">{impact.label}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="bg-gradient-to-r from-primary-900 to-primary-800 rounded-3xl p-8 md:p-12 text-center border border-primary-700">
-            <h3 className="text-2xl md:text-3xl font-bold text-white font-heading mb-4">
-              Initial Investment: <span className="text-yellow-300">$35,000</span>
-            </h3>
-            <p className="text-green-200 mb-8 max-w-2xl mx-auto">
-              Our Year 1 budget covers teacher training, learning materials, classroom renovation,
-              and operational costs. Every dollar is a direct investment in a child's future.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-              {[
-                { label: 'Teacher Training', amount: '$10,000', pct: '29%' },
-                { label: 'Learning Materials', amount: '$12,000', pct: '34%' },
-                { label: 'Classroom Renovation', amount: '$8,000', pct: '23%' },
-                { label: 'Operations & M&E', amount: '$5,000', pct: '14%' },
-              ].map((item) => (
-                <div key={item.label} className="bg-white/10 rounded-xl p-4">
-                  <div className="text-xl font-bold text-white font-heading">{item.amount}</div>
-                  <div className="text-green-300 text-xs font-medium">{item.pct}</div>
-                  <div className="text-green-200 text-xs mt-1">{item.label}</div>
-                </div>
-              ))}
-            </div>
-            <Link to="/get-involved" className="btn-accent">
-              <Heart className="w-4 h-4" /> Support This Mission
-            </Link>
-          </div>
-        </div>
-      </section>
+      <ImpactNumbersSection impacts={impacts} />
 
       {/* TESTIMONIALS */}
       <section className="section-padding bg-warm-50">
