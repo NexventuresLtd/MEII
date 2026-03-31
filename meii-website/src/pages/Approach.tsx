@@ -22,7 +22,7 @@ const pillars = [
       'Inclusive and differentiated instruction',
       'Continuous mentorship and peer learning',
     ],
-    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=700&q=80',
+    image: 'https://www.unicef.org/rwanda/sites/unicef.org.rwanda/files/styles/media_large_image/public/UN0302620.jpg.webp?itok=Ra30cE75',
     stat: { value: '200+', label: 'Teachers to Train in Year 1' },
   },
   {
@@ -41,7 +41,7 @@ const pillars = [
       'Mathematics tools and science kits',
       'Visual learning aids and teaching resources',
     ],
-    image: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=700&q=80',
+    image: 'https://www.wvi.org/sites/default/files/styles/medium_landscape/public/2025-04/8Q5A3111.jpg?itok=tmQHRReU',
     stat: { value: '5,000+', label: 'Students to Equip in Year 1' },
   },
   {
@@ -60,7 +60,7 @@ const pillars = [
       'Repair of floors, walls, and windows',
       'Creation of child-friendly learning spaces',
     ],
-    image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=700&q=80',
+    image: 'https://agaciropress.com/wp-content/uploads/2026/02/image-118.png',
     stat: { value: '10+', label: 'Classrooms to Renovate in 18 Months' },
   },
 ];
@@ -118,7 +118,7 @@ export default function Approach() {
         badge={<><Star className="h-4 w-4 text-accent-300" /> Our Methodology</>}
         title={<>A Comprehensive Plan for a <span className="text-accent-300">Brighter Future</span></>}
         description="We address the interconnected challenges of education in Mahama through an integrated, sustainable model that puts students and teachers first."
-        imageUrl="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&q=80"
+        imageUrl="/students mahama (2).jpeg"
         imageAlt="Teacher supporting students"
       />
       {false && <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 green-gradient overflow-hidden">

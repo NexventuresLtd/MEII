@@ -155,7 +155,7 @@ export default function GetInvolved() {
         badge={<><Heart className="h-4 w-4 text-accent-300" /> Make a Difference</>}
         title={<>Join the Movement for <span className="text-accent-300">Quality Education</span></>}
         description="Your support can transform a classroom, empower a teacher, and change a child's life. Together, we can build a brighter future for the children of Mahama."
-        imageUrl="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1600&q=80"
+        imageUrl="https://pfrwanda.org/storage/projects/1RDLKu5hHRzAcl04Pj438iudYkxeODJ6ssooTptu.jpg"
         imageAlt="Community support"
         actions={
           <>
@@ -166,7 +166,7 @@ export default function GetInvolved() {
               href={buildWhatsAppUrl('Hello MEII, I would like to discuss partnership and funding opportunities.')}
               target="_blank"
               rel="noreferrer"
-              className="btn-secondary border-white px-8 py-4 text-base text-white hover:bg-white/10 hover:text-white"
+              className="btn-secondary border-white px-8 py-4 text-base text-green-900 hover:bg-white/10 hover:text-white"
             >
               Discuss on WhatsApp <ArrowRight className="h-5 w-5" />
             </a>
@@ -251,12 +251,12 @@ export default function GetInvolved() {
                 </div>
                 <div>
                   <label className="mb-2 block text-sm font-medium text-slate-700">Last Name</label>
-                  <input type="text" placeholder="Doe" className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-slate-900 outline-none transition-all focus:border-primary-500 focus:ring-2 focus:ring-primary-100" />
+                  <input type="text" placeholder="Narame" className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-slate-900 outline-none transition-all focus:border-primary-500 focus:ring-2 focus:ring-primary-100" />
                 </div>
               </div>
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-700">Email Address</label>
-                <input type="email" placeholder="jane@example.com" className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-slate-900 outline-none transition-all focus:border-primary-500 focus:ring-2 focus:ring-primary-100" />
+                <input type="email" placeholder="janenarame@gmail.com" className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-slate-900 outline-none transition-all focus:border-primary-500 focus:ring-2 focus:ring-primary-100" />
               </div>
               <a
                 href={donationWhatsappUrl}

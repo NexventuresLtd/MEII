@@ -13,7 +13,7 @@ const teamMembers = [
     credentials: 'BSc Entrepreneurial Leadership, African Leadership University',
     color: 'bg-primary-600',
     icon: Star,
-    image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&q=80',
+    image: "https://t4.ftcdn.net/jpg/03/92/25/09/360_F_392250914_2Od8jNRBPgpMu8W29vCh4hiu5EUXbgGU.jpg",
   },
   {
     name: 'Dr. Mildred Kasaya Amugune',
@@ -22,7 +22,7 @@ const teamMembers = [
     credentials: 'African Leadership University Faculty',
     color: 'bg-blue-600',
     icon: GraduationCap,
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80',
+    image: 'https://t4.ftcdn.net/jpg/03/92/25/09/360_F_392250914_2Od8jNRBPgpMu8W29vCh4hiu5EUXbgGU.jpg',
   },
 ];
 
@@ -89,7 +89,7 @@ export default function About() {
         badge={<><Heart className="h-4 w-4 text-accent-300" /> Our Story</>}
         title={<>Driven by a Passion for <span className="text-accent-300">Education & Equity</span></>}
         description="MEII was founded to turn a vision of educational opportunity into a reality for the refugee community of Mahama."
-        imageUrl="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=1600&q=80"
+        imageUrl="https://agaciropress.com/wp-content/uploads/2026/02/image-118.png"
         imageAlt="Education team working together"
       />
       {false && <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 green-gradient overflow-hidden">
@@ -118,9 +118,9 @@ export default function About() {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=600&q=80"
+                  src="/Sheilla's profile.jpeg"
                   alt="Founder Sheilla Igiraneza"
-                  className="w-full h-96 object-cover"
+                  className="w-full h-120 object-cover"
                 />
               </div>
               <div className="absolute -bottom-6 -right-4 md:-right-6 bg-white rounded-2xl shadow-xl p-5 max-w-[220px]">
@@ -181,7 +181,7 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {teamMembers.map((member, i) => (
                 <div key={i} className="bg-white rounded-3xl shadow-card border border-gray-100 overflow-hidden hover:shadow-card-hover transition-all duration-300">
-                  <div className="h-48 overflow-hidden">
+                  <div className="h-64 overflow-hidden">
                     <img src={member.image} alt={member.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="p-6">
@@ -341,7 +341,7 @@ export default function About() {
             <Link to="/get-involved" className="btn-primary bg-white text-primary-700 hover:bg-green-50 text-base px-8 py-4">
               <Heart className="w-5 h-5 text-red-500" /> Get Involved
             </Link>
-            <Link to="/contact" className="btn-secondary border-white text-white hover:bg-white/10 hover:text-white text-base px-8 py-4">
+            <Link to="/contact" className="btn-secondary border-white text-green-900 hover:bg-white/10 hover:text-white text-base px-8 py-4">
               Contact Us <ArrowRight className="w-5 h-5" />
             </Link>
           </div>

@@ -82,7 +82,7 @@ export default function Contact() {
         badge={<><MessageCircle className="h-4 w-4 text-accent-300" /> Let&apos;s Connect</>}
         title={<>Get in <span className="text-accent-300">Touch</span></>}
         description="We'd love to hear from you. Whether you have a question, want to partner, or are interested in supporting our work, please reach out."
-        imageUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80"
+        imageUrl="https://admin.concern.net/sites/default/files/styles/1120x630/public/media/migrated//Denise_Kageyo_leftEDIT.jpg?changed=2019-04-17T06:26:09+00:00"
         imageAlt="Community discussion"
       />
 
@@ -206,7 +206,7 @@ export default function Contact() {
               <div id="location" className="overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-card">
                 <div className="relative flex h-52 items-center justify-center bg-gradient-to-br from-primary-100 to-primary-200">
                   <img
-                    src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80"
+                    src="https://en-images.igihe.com/jpg/31-dji_20240430195327_0025_d-0e650.jpg"
                     alt="Rwanda landscape"
                     className="absolute inset-0 h-full w-full object-cover opacity-60"
                   />

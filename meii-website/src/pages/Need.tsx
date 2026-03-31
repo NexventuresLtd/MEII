@@ -70,7 +70,7 @@ export default function Need() {
         badge={<><AlertTriangle className="h-4 w-4 text-accent-300" /> The Crisis</>}
         title={<>Education as a <span className="text-accent-300">Lifeline</span></>}
         description="For the tens of thousands of Burundian refugees in Mahama Camp, education is more than a subject. It is stability, dignity, and a pathway to a self-determined future."
-        imageUrl="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&q=80"
+        imageUrl="https://www.wfp.org/sites/default/files/styles/media_embed/public/2020-11/1%2Aan5ClPtkjtpwtIt8S_bjMg.jpeg?itok=rQ4KX7Fp"
         imageAlt="Children learning together"
         tone="slate"
       >
@@ -89,7 +89,7 @@ export default function Need() {
       {false && <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gray-900 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1400&q=80"
+            src="https://www.unicef.org/rwanda/sites/unicef.org.rwanda/files/styles/media_large_image/public/UN0302620.jpg.webp?itok=Ra30cE75"
             alt="Children at school"
             className="w-full h-full object-cover opacity-20"
           />
@@ -166,14 +166,14 @@ export default function Need() {
             <div>
               <div className="rounded-3xl overflow-hidden shadow-2xl mb-6">
                 <img
-                  src="https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98?w=700&q=80"
+                  src="https://pbs.twimg.com/media/G5vgC6VXUAEH2yp.jpg"
                   alt="Students in Rwanda"
                   className="w-full h-72 object-cover"
                 />
               </div>
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=700&q=80"
+                  src="https://pbs.twimg.com/media/Gur0c27WEAA2ISm.jpg"
                   alt="Children studying"
                   className="w-full h-48 object-cover"
                 />

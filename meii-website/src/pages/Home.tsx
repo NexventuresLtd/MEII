@@ -25,7 +25,7 @@ const pillars = [
     color: 'bg-green-50 border-green-200',
     iconBg: 'bg-green-600',
     features: ['Competency-based teaching', 'Classroom management', 'Inclusive education', 'Peer mentorship'],
-    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&q=80',
+    image: 'https://media.licdn.com/dms/image/v2/D4E22AQHNuvRiLk2_VA/feedshare-shrink_800/B4EZcxGvWUHAAk-/0/1748875542014?e=2147483647&v=beta&t=p-23QJxqIo2cFsdHWynbXShh1cUk89mFNAOR9aV7_lE',
   },
   {
     icon: BookOpen,
@@ -34,7 +34,7 @@ const pillars = [
     color: 'bg-orange-50 border-orange-200',
     iconBg: 'bg-orange-500',
     features: ['Core subject textbooks', 'Notebooks & stationery', 'Science & math kits', 'Visual teaching aids'],
-    image: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=400&q=80',
+    image: 'https://www.sosmediasburundi.org/wp-content/uploads/2023/10/IMG-20231005-WA0046-1900x1069_c.jpg',
   },
   {
     icon: HomeIcon,
@@ -43,7 +43,7 @@ const pillars = [
     color: 'bg-blue-50 border-blue-200',
     iconBg: 'bg-blue-600',
     features: ['Desks & blackboards', 'Lighting & ventilation', 'Structural repairs', 'Child-friendly spaces'],
-    image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&q=80',
+    image: 'https://en-images.igihe.com/jpg/ec1a9199-2-3348c.jpg',
   },
 ];
 
@@ -82,14 +82,14 @@ export default function Home() {
         badge={<><Globe className="h-4 w-4 text-accent-300" /> Kirehe District, Rwanda · Est. 2026</>}
         title={<>Building Futures, <span className="text-accent-300">One Classroom</span> at a Time.</>}
         description={<>The Mahama Education Improvement Initiative (MEII) is transforming education for over <strong className="text-white">30,000 refugee learners</strong> in Rwanda. We provide teachers with skills, students with tools, and schools with safe spaces to learn and thrive.</>}
-        imageUrl="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&q=80"
+        imageUrl="/students mahama (1).jpeg"
         imageAlt="Students learning in a classroom"
         actions={
           <>
             <Link to="/approach" className="btn-primary bg-white text-primary-700 hover:bg-green-50 hover:text-primary-800 shadow-xl text-base px-8 py-4">
               Learn About Our Work <ArrowRight className="w-5 h-5" />
             </Link>
-            <Link to="/get-involved" className="btn-secondary border-white text-white hover:bg-white/10 hover:text-white text-base px-8 py-4">
+            <Link to="/get-involved" className="btn-secondary border-white text-green-600 hover:bg-white/10 hover:text-white text-base px-8 py-4">
               <Heart className="w-5 h-5 text-accent-300" /> Support Our Mission
             </Link>
           </>

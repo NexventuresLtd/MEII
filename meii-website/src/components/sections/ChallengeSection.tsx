@@ -17,7 +17,7 @@ export default function ChallengeSection() {
           <div className="relative">
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=700&q=80"
+                src="/students mahama (1).jpeg"
                 alt="Children in classroom"
                 className="w-full h-80 md:h-[450px] object-cover"
               />

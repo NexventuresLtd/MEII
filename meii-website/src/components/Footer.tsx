@@ -35,7 +35,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-950 text-gray-300">
-      <div className="bg-gradient-to-r from-primary-800 to-primary-600 py-12">
+      {/* <div className="bg-gradient-to-r from-primary-800 to-primary-600 py-12">
         <div className="section-container text-center">
           <h2 className="mb-3 font-heading text-2xl font-bold text-white md:text-3xl">
             Ready to Make a Difference?
@@ -48,23 +48,19 @@ export default function Footer() {
             <Link to="/get-involved" className="btn-accent">
               <Heart className="h-4 w-4" /> Donate Now
             </Link>
-            <Link to="/contact" className="btn-secondary border-white text-white hover:bg-white/10 hover:text-white">
+            <Link to="/contact" className="btn-secondary border-white text-green-8800 hover:bg-white/10 hover:text-white">
               Contact Us <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="section-container py-16">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <Link to="/" className="mb-5 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary-600 shadow-glow-green">
-                <BookOpen className="h-5 w-5 text-white" />
-              </div>
-              <div>
-                <span className="block font-heading text-lg font-bold leading-none text-white">MEII</span>
-                <span className="text-xs leading-none text-gray-400">Education Initiative</span>
+            <Link to="/" className="mb-5 inline-flex items-center ">
+              <div className="flex h-14 w-44 flex-shrink-0 items-center justify-center rounded-xl bg-white shadow-glow-green">
+                <img src="/MEII SHeilla logo 1.png" alt="MEII Logo" className="h-full w-full object-contain" />
               </div>
             </Link>
             <p className="mb-5 text-sm leading-relaxed text-gray-400">
@@ -184,7 +180,7 @@ export default function Footer() {
             © 2026 Mahama Education Improvement Initiative. All rights reserved.
           </p>
           <p className="flex items-center gap-1.5 text-sm text-gray-500">
-            Made with <Heart className="h-3.5 w-3.5 text-red-500 fill-red-500" /> for Mahama&apos;s children
+            Made with by Nexventures Ltd 
           </p>
         </div>
       </div>
